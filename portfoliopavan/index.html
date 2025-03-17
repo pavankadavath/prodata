@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pavankadavath</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Styles.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "vsPi2-IU9PG-22J5d",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Myself</h3>
+            <h1>KADAVATH PAVAN</h1>
+            <h3>And I'm a <span>Full-stack Developer</span></h3>
+            <p>Knowledge is a never-ending adventure, and I'm all about embracing that journey! I'm an
+                enthusiastic learner, constantly seeking out new skills and ideas.  My dedication to self-improvement ensures I bring the
+                latest knowledge and expertise to the table, fostering a culture of continuous innovation.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/prince.pavan.900" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_pavan._315/?next=%2F" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/PavanPr49667216" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/pavan-kadavath1503/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/pavankadavath" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Trash/pavanSDE.pdf" download="PavanResume" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="hero_image.jpg" alt="Photo of Kadavath Pavan">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="about.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>full-stack Developer</h3>
+            <p>Knowledge is a never-ending adventure, and I'm all about embracing that journey! I'm an
+                enthusiastic learner, constantly seeking out new skills and ideas. Highly motivated MERN stack
+                developer with a passion for continuous learning and a collaborative spirit. Seeking a
+                challenging position in a fast-paced environment to leverage my full-stack development skills
+                and contribute to a team's success. My dedication to self-improvement ensures I bring the
+                latest knowledge and expertise to the table, fostering a culture of continuous innovation.</p>            
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>FrontEnd Development</h3>
+                <p>"I have extensive experience in frontend development, specializing in creating intuitive and responsive web interfaces...</p>
+                <button class="btn read-more-btn" data-modal="frontendModal">Read More</button>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>BackEnd Development</h3>
+                <p>"As a backend developer, I excel in building robust and scalable server-side applications...</p>
+                <button class="btn read-more-btn" data-modal="backendModal">Read More</button>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-window-restore"></i>
+                <h3>Full-stack Development</h3>
+                <p>"As a fullstack developer, I possess a holistic understanding of both frontend and backend technologies...</p>
+                <button class="btn read-more-btn" data-modal="fullstackModal">Read More</button>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <div id="frontendModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>FrontEnd Development</h3>
+                <p>I have extensive experience in frontend development, specializing in creating intuitive and responsive web interfaces. My expertise includes HTML, CSS, Bootstrap  (including preprocessors like Sass), and JavaScript, along with popular frameworks such as React and Vue.js. I prioritize clean, maintainable code and am skilled in optimizing web performance and ensuring accessibility.</p>
+            </div>
+        </div>
+    
+        <div id="backendModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>BackEnd Development</h3>
+                <p>As a backend developer, I excel in building robust and scalable server-side applications. I am proficient in Node.js with extensive experience in frameworks like Express. My database expertise includes both SQL (MySQL) and NoSQL (MongoDB) technologies. I have a strong understanding of RESTful development, ensuring secure and efficient data exchange. I prioritize security, implementing best practices for authentication and data protection.</p>
+            </div>
+        </div>
+    
+        <div id="fullstackModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Full-stack Development</h3>
+                <p>As a fullstack developer, I possess a holistic understanding of both frontend and backend technologies, enabling me to build complete web applications. I am skilled in integrating React and Node.js, ensuring smooth interaction between the client and server. My expertise extends to database management, API development, and implementing CI/CD pipelines for efficient deployment. I have experience working with cloud platforms like AWS and am well-versed in DevOps practices. My comprehensive approach includes collaborating with cross-functional teams to deliver seamless and user-centric solutions.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            
+            <div class="portfolio-box">
+                <img src="shadyChat.png" alt="shady chat">
+                <div class="portfolio-layer">
+                    <h4>Shady Chat</h4>
+                    <p>A real-time chat application with group chat and notifications, built with MERN and Socket.io.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>            
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="connectAndCure.png" alt="connect and cure ">
+                <div class="portfolio-layer">
+                    <h4>Connect & Cure</h4>
+                    <p>A web-based doctor appointment booking system built using the MERN stack.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>            
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="connectMyCareer.png" alt="connect my career">
+                <div class="portfolio-layer">
+                    <h4>Connect My Career</h4>
+                    <p>A job listing portal for both off-campus and on-campus recruitment using the MERN stack.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>            
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#" id="contactForm" class="contact-form">
+            <div class="input-box">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-group">
+                    <label for="number">Number</label>
+                    <input type="number" id="number" placeholder="Mobile Number" required>
+                </div>
+                <div class="input-group">
+                    <label for="subject">Email Subject</label>
+                    <input type="text" id="subject" placeholder="Email Subject" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @pavan opensource | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
